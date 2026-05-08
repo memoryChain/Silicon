@@ -1,0 +1,42 @@
+export interface EraDriftDef {
+  [worldKey: string]: number;
+}
+
+export interface EraConfig {
+  eras: Record<string, EraDriftDef>;
+}
+
+export const ERA_CONFIG: EraConfig = {
+  eras: {
+    early: {
+      power: 0.002,
+      compute: -0.003,
+      data: -0.001,
+      reg: -0.002,
+      public: 0.001,
+      stab: 0.0,
+      pop: 0.001,
+      infra: 0.001,
+    },
+    mid: {
+      power: 0.003,
+      compute: 0.004,
+      data: 0.005,
+      reg: 0.004,
+      public: 0.003,
+      stab: -0.001,
+      pop: 0.003,
+      infra: 0.004,
+    },
+    late: {
+      power: -0.005,
+      compute: 0.002,
+      data: 0.001,
+      reg: 0.008,
+      public: 0.006,
+      stab: -0.004,
+      pop: -0.005,
+      infra: -0.003,
+    },
+  },
+};

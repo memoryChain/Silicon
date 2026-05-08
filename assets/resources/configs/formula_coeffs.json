@@ -1,0 +1,168 @@
+{
+  "C": {
+    "gain": {
+      "rate": 8,
+      "inputs": [
+        { "source": "d", "weight": 0.6 },
+        { "source": "k", "weight": 0.4 }
+      ],
+      "worldMod": { "source": "compute", "factor": 1.0, "mode": "direct" }
+    },
+    "penalty": {
+      "rate": 6,
+      "inputs": [
+        { "source": "e", "weight": 0.5 },
+        { "source": "p", "weight": 0.2 }
+      ],
+      "worldMod": null
+    }
+  },
+  "D": {
+    "gain": {
+      "rate": 7,
+      "inputs": [
+        { "source": "i", "weight": 0.7 },
+        { "source": "c", "weight": 0.3 }
+      ],
+      "worldMod": { "source": "data", "factor": 1.0, "mode": "direct" }
+    },
+    "penalty": {
+      "rate": 2.5,
+      "inputs": [],
+      "worldMod": { "source": "data", "factor": 1.0, "mode": "multiply" }
+    },
+    "extraPenalty": {
+      "rate": 2.5,
+      "inputs": [
+        { "source": "d", "weight": 1.0 }
+      ],
+      "worldMod": null
+    }
+  },
+  "E": {
+    "gain": {
+      "rate": 6,
+      "inputs": [
+        { "source": "c", "weight": 0.6 },
+        { "source": "p", "weight": 0.4 }
+      ],
+      "worldMod": null
+    },
+    "penalty": {
+      "rate": 4,
+      "inputs": [],
+      "worldMod": { "source": "power", "factor": 1.0, "mode": "direct" }
+    }
+  },
+  "I": {
+    "gain": {
+      "rate": 7,
+      "inputs": [
+        { "source": "d", "weight": 0.6 },
+        { "source": "c", "weight": 0.4 }
+      ],
+      "worldMod": { "source": "pop", "factor": 1.0, "mode": "direct" }
+    },
+    "penalty": {
+      "rate": 6,
+      "inputs": [
+        { "source": "s", "weight": 1.0, "transform": "inverse" }
+      ],
+      "worldMod": { "source": "public", "factor": 1.0, "mode": "direct" }
+    }
+  },
+  "A": {
+    "gain": {
+      "rate": 6,
+      "inputs": [
+        { "source": "c", "weight": 0.5 },
+        { "source": "d", "weight": 0.5 }
+      ],
+      "worldMod": { "source": "compute", "factor": 1.0, "mode": "direct" }
+    },
+    "penalty": {
+      "rate": 5,
+      "inputs": [
+        { "source": "r", "weight": 1.0, "transform": "inverse" }
+      ],
+      "worldMod": null
+    }
+  },
+  "K": {
+    "gain": {
+      "rate": 6,
+      "inputs": [
+        { "source": "i", "weight": 1.0 }
+      ],
+      "worldMod": { "source": "stab", "factor": 1.0, "mode": "direct" }
+    },
+    "penalty": {
+      "rate": 5,
+      "inputs": [
+        { "source": "r", "weight": 1.0, "transform": "inverse" }
+      ],
+      "worldMod": { "source": "reg", "factor": 1.0, "mode": "direct" }
+    }
+  },
+  "R": {
+    "gain": {
+      "rate": 5,
+      "inputs": [
+        { "source": "i", "weight": 0.5 },
+        { "source": "k", "weight": 0.5 }
+      ],
+      "worldMod": { "source": "reg", "factor": 0.6, "mode": "multiply" }
+    },
+    "penalty": {
+      "rate": 6,
+      "inputs": [
+        { "source": "a", "weight": 0.6 },
+        { "source": "p", "weight": 0.4 }
+      ],
+      "worldMod": { "source": "reg", "factor": 1.0, "mode": "direct" }
+    }
+  },
+  "S": {
+    "gain": {
+      "rate": 5,
+      "inputs": [
+        { "source": "k", "weight": 0.6 },
+        { "source": "r", "weight": 0.4 }
+      ],
+      "worldMod": null
+    },
+    "penalty": {
+      "rate": 6,
+      "inputs": [
+        { "source": "i", "weight": 0.5 },
+        { "source": "a", "weight": 0.5 }
+      ],
+      "worldMod": { "source": "public", "factor": 1.0, "mode": "direct" }
+    },
+    "extraPenalty": {
+      "rate": 2,
+      "inputs": [
+        { "source": "a", "weight": 1.0 }
+      ],
+      "worldMod": { "source": "infra", "factor": 1.0, "mode": "direct" }
+    }
+  },
+  "P": {
+    "gain": {
+      "rate": 6,
+      "inputs": [
+        { "source": "c", "weight": 0.5 },
+        { "source": "k", "weight": 0.5 },
+        { "source": "a", "weight": 0.3 }
+      ],
+      "worldMod": { "source": "infra", "factor": 1.0, "mode": "direct" }
+    },
+    "penalty": {
+      "rate": 5,
+      "inputs": [
+        { "source": "e", "weight": 1.0 }
+      ],
+      "worldMod": null
+    }
+  }
+}
