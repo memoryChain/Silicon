@@ -7,7 +7,8 @@ export enum Era {
   LATE = 'late',
 }
 
-export const ERA_BOUNDARIES: { era: Era; min: number; max: number }[] = [
+// 时代边界（单位：周） 对应 GDD：早期 0–15月，中期 15–45月，后期 45月+
+export const ERA_BOUNDARIES_WEEKS: { era: Era; min: number; max: number }[] = [
   { era: Era.EARLY, min: 0, max: 60 },
   { era: Era.MID, min: 60, max: 180 },
   { era: Era.LATE, min: 180, max: Infinity },
@@ -90,7 +91,7 @@ export const DEFAULT_MULTIPLIER = 1.0;
 export const DEFAULT_GP_WEIGHTS = { w1: 0.25, w2: 0.25, w3: 0.20, w4: 0.20 };
 
 // ── Tick 间隔（现实秒/ tick，在 speed=1x 时） ──
-export const TICK_INTERVAL = 1.0;
+export const TICK_INTERVAL = 3.0;
 
 // ── 存档 key ──
 export const SAVE_KEY_PREFIX = 'ai_rise_save_';

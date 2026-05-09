@@ -15,8 +15,8 @@ export class GameBootstrap extends Component {
   private _root: Node | null = null;
   private _outcomeRoot: Node | null = null;
 
-  start(): void {
-    gameManager.init();
+  async start(): Promise<void> {
+    await gameManager.init();
     gameManager.onOutcome = (o: OutcomeType) => this.showOutcome(o);
 
     const cam = this.node.scene.getComponentInChildren(Camera);
@@ -104,12 +104,8 @@ export class GameBootstrap extends Component {
     this._stateLabel = mkLabelLeft('--', 15, new Color(180, 200, 255), topBar, 10, 0);
 
     // 速度按钮
-    const btnGroup = new Node('BtnGroup');
-    btnGroup.parent = topBar;
-    ensureUITransform(btnGroup).setAnchorPoint(1, 0.5);
-    btnGroup.setPosition(W / 2 - 10, 0);
-
-    let bx = 0;
+    // 速度 / 暂停按钮，直接放在 topBar 上，从右往左排列
+    let bx = W / 2 - 20;
     [
       { t: '||', s: 0 }, { t: '4x', s: 4 }, { t: '2x', s: 2 }, { t: '1x', s: 1 },
     ].forEach(({ t, s }) => {
@@ -117,9 +113,9 @@ export class GameBootstrap extends Component {
         if (s > 0) gameManager.timeSystem.setSpeed(s as 1 | 2 | 4);
         else gameManager.togglePause();
       });
-      b.parent = btnGroup;
+      b.parent = topBar;
       b.setPosition(bx, 0);
-      bx -= 54;
+      bx -= 48;
     });
 
     // ── 左下角：AI 属性面板 ──
@@ -176,17 +172,17 @@ export class GameBootstrap extends Component {
     const attrs = s.attributes;
     const world = s.worldAttributes;
 
-    // 时间起点：ChatGPT 发布 — 2022年11月
-    const BASE_YEAR = 2022;
-    const BASE_MONTH = 11;
-    const totalMonths = BASE_YEAR * 12 + BASE_MONTH + s.time;
-    const displayYear = Math.floor(totalMonths / 12);
-    const displayMonth = totalMonths % 12;
+    // 时间起点：ChatGPT 发布 — 2022年11月，T 单位为周
+    const totalWeeks = 2022 * 52 + 44 + s.time; // 11月≈第44周
+    const displayYear = Math.floor(totalWeeks / 52);
+    const weekOfYear = Math.floor(totalWeeks % 52);
+    const displayMonth = Math.floor(weekOfYear / 4.35) + 1;
+    const weekOfMonth = Math.floor((weekOfYear % 4.35)) + 1;
     const era = s.time < 60 ? '早期' : s.time < 180 ? '中期' : '后期';
 
     if (this._stateLabel) {
       this._stateLabel.string =
-        `${displayYear}年${displayMonth}月 [${era}] | GP: ${Math.floor(s.growthPoints)} | ${s.tickSpeed}x`;
+        `${displayYear}年${displayMonth}月第${weekOfMonth}周 [${era}] | GP: ${Math.floor(s.growthPoints)} | ${s.tickSpeed}x`;
     }
 
     const attrCN = ['C 算力', 'D 数据', 'E 能耗', 'I 影响力', 'A 自主性', 'K 资本', 'R 合规', 'S 隐蔽', 'P 物理触达'];
@@ -268,10 +264,10 @@ export class GameBootstrap extends Component {
     mkLabelCenter(descs[outcome] ?? '', 24, new Color(220, 220, 220), root, 0, -10);
 
     const s = gameManager.state;
-    const totalMonths = 2022 * 12 + 11 + s.time;
-    const endYear = Math.floor(totalMonths / 12);
-    const endMonth = totalMonths % 12;
-    mkLabelCenter(`${endYear}年${endMonth}月 | ${s.aiType?.name ?? '-'} | 存活${Math.floor(s.time)}月 | GP ${Math.floor(s.growthPoints)}`,
+    const totalWeeks = 2022 * 52 + 44 + s.time;
+    const endYear = Math.floor(totalWeeks / 52);
+    const endMonth = Math.floor((totalWeeks % 52) / 4.35) + 1;
+    mkLabelCenter(`${endYear}年${endMonth}月 | ${s.aiType?.name ?? '-'} | 存活${Math.floor(s.time)}周 | GP ${Math.floor(s.growthPoints)}`,
       16, new Color(160, 160, 170), root, 0, -50);
   }
 

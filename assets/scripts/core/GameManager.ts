@@ -54,8 +54,8 @@ export class GameManager {
   }
 
   /** 初始化：加载配置 → 创建引擎 → 创建子系统 */
-  init(): void {
-    this.config.loadAll();
+  async init(): Promise<void> {
+    await this.config.loadAll();
 
     const engine = new FormulaEngine(this.config.formulaConfig!);
     this.attrSystem = new AttributeSystem(this.state, engine);
