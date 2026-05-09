@@ -1,6 +1,7 @@
-import { _decorator, Component, Node, Label, UITransform, Color, Sprite, SpriteFrame, Camera, Graphics } from 'cc';
+import { _decorator, Component, Node, Label, UITransform, Color, Sprite, SpriteFrame, Camera, Graphics, tween, Vec3 } from 'cc';
 import { gameManager } from '../core/GameManager';
 import { GamePhase, OutcomeType } from '../data/GameConstants';
+import { EventBus, GameEvents } from '../utils/EventBus';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameBootstrap')
@@ -14,6 +15,10 @@ export class GameBootstrap extends Component {
   private _worldLabels: Label[] = [];
   private _root: Node | null = null;
   private _outcomeRoot: Node | null = null;
+  private _marqueeLines: { label: Label; busy: boolean }[] = [];
+  private _marqueeNode: Node | null = null;
+  private _marqueeQueue: string[] = [];
+  private _marqueeLineIdx = 0;
 
   async start(): Promise<void> {
     await gameManager.init();
@@ -95,6 +100,9 @@ export class GameBootstrap extends Component {
 
     // ── 世界地图（最底层） ──
     this.createMap(root, W, H);
+
+    // ── 跑马灯（顶栏下方） ──
+    this.createMarquee(root, W, H);
 
     // ── 顶栏（手动定位到顶部） ──
     const topBar = mkGraphicsBox('TopBar', new Color(8, 12, 24, 180), W, 36);
@@ -204,6 +212,79 @@ export class GameBootstrap extends Component {
       if (i >= worldKeys.length) return;
       lbl.string = `W_${worldCN[i]}: ${((world as any)[worldKeys[i]] * 100).toFixed(0)}%`;
     });
+  }
+
+  // ── 跑马灯（3 行） ──
+
+  private createMarquee(parent: Node, W: number, H: number): void {
+    const marqueeNode = new Node('Marquee');
+    marqueeNode.parent = parent;
+    this._marqueeNode = marqueeNode;
+
+    const LINE_H = 24;
+    const GAP = 2;
+    const totalH = LINE_H * 3 + GAP * 2;
+
+    // 底条背景
+    const bg = marqueeNode.addComponent(Graphics);
+    bg.fillColor = new Color(0, 0, 0, 150);
+    bg.rect(-W / 2, -totalH / 2, W, totalH);
+    bg.fill();
+    marqueeNode.setPosition(0, H / 2 - 36 - totalH / 2 - 2);
+
+    // 3 行跑马灯
+    this._marqueeLines = [];
+    for (let i = 0; i < 3; i++) {
+      const labelNode = new Node('MarqueeLine' + i);
+      labelNode.parent = marqueeNode;
+      const label = labelNode.addComponent(Label);
+      label.string = '';
+      label.fontSize = 13;
+      label.color = new Color(255, 200, 60, 200);
+      label.lineHeight = LINE_H;
+      ensureUITransform(labelNode).setContentSize(W - 40, LINE_H);
+      const y = totalH / 2 - LINE_H / 2 - i * (LINE_H + GAP);
+      labelNode.setPosition(-W / 2 + 20, y);
+      this._marqueeLines.push({ label, busy: false });
+    }
+
+    // 监听事件触发
+    EventBus.on(GameEvents.EVENT_TRIGGERED, (data: any) => {
+      const title = data.event?.title ?? data.event?.config?.title ?? '';
+      if (title) {
+        this._marqueeQueue.push(title);
+        this.tryPlayMarquee();
+      }
+    });
+  }
+
+  private tryPlayMarquee(): void {
+    if (!this._marqueeQueue.length) return;
+    // 找空闲行
+    const line = this._marqueeLines.find(l => !l.busy);
+    if (!line) return; // 3 行都忙，等某行播完会自动取
+
+    const text = this._marqueeQueue.shift()!;
+    line.busy = true;
+    line.label.string = '📢 ' + text;
+    line.label.node.active = true;
+
+    const textWidth = (text.length + 2) * 13;
+    const barWidth = (this.node.getComponent(UITransform)?.width ?? 1280) - 40;
+
+    line.label.node.setPosition(barWidth / 2, line.label.node.position.y, 0);
+
+    const speed = 30; // px/s，统一速度
+    const duration = (barWidth + textWidth) / speed;
+    const targetX = -barWidth / 2 - textWidth;
+    tween(line.label.node)
+      .to(duration, { position: new Vec3(targetX, line.label.node.position.y, 0) })
+      .call(() => {
+        line.busy = false;
+        line.label.string = '';
+        this.tryPlayMarquee();
+      })
+      .start();
   }
 
   // ── 世界地图 ──

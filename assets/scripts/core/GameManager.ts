@@ -61,7 +61,8 @@ export class GameManager {
     this.attrSystem = new AttributeSystem(this.state, engine);
     this.worldSystem = new WorldAttributeSystem(this.state, this.config);
     this.skillSystem = new SkillTreeSystem(this.state, this.config);
-    this.eventSystem = new EventSystem(this.state, this.config);
+    this.eventSystem = new EventSystem(this.state);
+    this.eventSystem.loadConfig(this.config.eventConfigs);
     this.aiTypeSystem = new AITypeSystem(this.state, this.config);
   }
 
@@ -142,15 +143,8 @@ export class GameManager {
     // 6. 世界属性漂移
     this.worldSystem.drift(era, dt);
 
-    // 7. 事件扫描
-    this.eventSystem.scan();
-    if (this.eventSystem.hasPending()) {
-      const evt = this.eventSystem.popNext();
-      if (evt) {
-        EventBus.emit(GameEvents.EVENT_TRIGGERED, { event: evt });
-        this.onEvent?.(evt);
-      }
-    }
+    // 7. 事件触发（每月随机 0-3 个）
+    this.eventSystem.tick();
 
     EventBus.emit(GameEvents.TICK_AFTER);
   }
