@@ -3,25 +3,19 @@ const fs = require('fs');
 // 从 CityData.ts 的旧版本提取坐标 → 生成 cities.json
 // 经纬度坐标直接写在这里
 
-// 等距矩形投影，与 gen_world_map.js 中 d3.geoEquirectangular.rotate([-105,0]) 一致
-// 地图尺寸 2048×1152 → scale = 2048/(2*PI*180/PI) ≈ 5.69 px/度
+// 等距矩形投影，与 d3.geoEquirectangular.rotate([-105,0]) 完全一致
+// X 和 Y 使用相同的 scale（这是等距矩形投影的核心特征）
 const W = 2048, H = 1152;
 const CENTER_LON = 105;
-const SCALE = W / 360; // 等距矩形投影 scale
+const SCALE = W / 360; // px/度，X 和 Y 共用
 
 function lonLat(lon, lat) {
-  // 1. 旋转经度使 CENTER_LON 居中
   let rlon = lon - CENTER_LON;
-  // 2. 标准化到 [-180, 180]
   while (rlon < -180) rlon += 360;
   while (rlon > 180) rlon -= 360;
-  // 3. 投影
   const x = rlon * SCALE + W / 2;
   const y = -lat * SCALE + H / 2;
-  // 4. 归一化到 0-1
-  const nx = +(x / W).toFixed(6);
-  const ny = +(y / H).toFixed(6);
-  return [nx, ny];
+  return [+(x / W).toFixed(6), +(y / H).toFixed(6)];
 }
 
 const countries = [

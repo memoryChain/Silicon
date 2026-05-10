@@ -338,8 +338,11 @@ export class GameBootstrap extends Component {
     mapNode.parent = parent;
     const sprite = mapNode.addComponent(Sprite);
     sprite.spriteFrame = this.worldMapSpriteFrame;
-    // 正常颜色，不加暗
-
+    // 强制 UITransform = 图片像素尺寸，跟 Graphics 坐标一致
+    mapNode.getComponent(UITransform)!.setContentSize(
+      this.worldMapSpriteFrame.width,
+      this.worldMapSpriteFrame.height,
+    );
     const imgW = this.worldMapSpriteFrame.width;
     const imgH = this.worldMapSpriteFrame.height;
 
@@ -354,8 +357,11 @@ export class GameBootstrap extends Component {
     mapNode.setScale(scale, scale);
     mapNode.setPosition(0, (mapTop + mapBottom) / 2);
 
-    // 网络节点覆盖层（跟地图同缩放）
-    this._mapOverlay = new WorldMapOverlay(mapNode, imgW, imgH, gameManager.config.citiesConfig);
+    // 覆盖层：同级节点，同步位置和缩放，尺寸保持 2048×1152
+    this._mapOverlay = new WorldMapOverlay(parent, 2048, 1152, gameManager.config.citiesConfig, gameManager.config.countryShapes);
+    const overlayNode = this._mapOverlay.node;
+    overlayNode.setScale(scale, scale);
+    overlayNode.setPosition(mapNode.position);
   }
 
   // ── 结局 ──

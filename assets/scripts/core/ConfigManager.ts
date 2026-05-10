@@ -15,6 +15,7 @@ export class ConfigManager {
   private _eraConfig: EraConfig = null!;
   private _eventConfigs: EventConfig[] = [];
   private _citiesConfig: CitiesConfig = null!;
+  private _countryShapes: { id: string; path: string }[] = [];
   private _loaded = false;
 
   get aiTypes(): ReadonlyMap<string, AITypeConfig> { return this._aiTypes; }
@@ -24,6 +25,7 @@ export class ConfigManager {
   get eraConfig(): EraConfig { return this._eraConfig; }
   get eventConfigs(): EventConfig[] { return this._eventConfigs; }
   get citiesConfig(): CitiesConfig { return this._citiesConfig; }
+  get countryShapes(): { id: string; path: string }[] { return this._countryShapes; }
 
   async loadAll(): Promise<void> {
     if (this._loaded) return;
@@ -37,7 +39,7 @@ export class ConfigManager {
       });
 
     try {
-      const [aiTypes, skillTree, worldInit, formula, events, eras, eventCfg, cities] = await Promise.all([
+      const [aiTypes, skillTree, worldInit, formula, events, eras, eventCfg, cities, shapes] = await Promise.all([
         load('configs/ai_types'),
         load('configs/skill_tree'),
         load('configs/world_init'),
@@ -46,6 +48,7 @@ export class ConfigManager {
         load('configs/eras'),
         load('configs/event_config'),
         load('configs/cities'),
+        load('configs/country_shapes'),
       ]);
 
       this._loadAITypes(aiTypes);
@@ -55,6 +58,7 @@ export class ConfigManager {
       this._eraConfig = eras;
       this._eventConfigs = Array.isArray(eventCfg) ? eventCfg : (eventCfg.events ?? []);
       this._citiesConfig = cities;
+      this._countryShapes = Array.isArray(shapes) ? shapes : [];
       this._loaded = true;
     } catch (e) {
       console.error('[ConfigManager] JSON 配置加载失败:', e);
