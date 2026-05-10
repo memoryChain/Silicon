@@ -350,6 +350,21 @@ export class GameBootstrap extends Component {
     const endMonth = Math.floor((totalWeeks % 52) / 4.35) + 1;
     mkLabelCenter(`${endYear}年${endMonth}月 | ${s.aiType?.name ?? '-'} | 存活${Math.floor(s.time)}周 | GP ${Math.floor(s.growthPoints)}`,
       16, new Color(160, 160, 170), root, 0, -50);
+
+    // 重新开始按钮
+    const restartBtn = this.makeBtn('重新开始', () => {
+      this._outcomeRoot?.destroy();
+      this._outcomeRoot = null;
+      if (this._root) { this._root.destroy(); this._root = null; }
+      this._attrLabels = [];
+      this._worldLabels = [];
+      this._marqueeLines = [];
+      this._marqueeQueue = [];
+      this.unschedule(this.refreshHUD);
+      this.buildUI();
+    });
+    restartBtn.parent = root;
+    restartBtn.setPosition(0, -100);
   }
 
   // ── 工具 ──
