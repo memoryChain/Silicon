@@ -1,0 +1,4389 @@
+{
+  "countries": [
+    {
+      "id": "US",
+      "name": "美国",
+      "continent": "北美洲"
+    },
+    {
+      "id": "CN",
+      "name": "中国",
+      "continent": "亚洲"
+    },
+    {
+      "id": "JP",
+      "name": "日本",
+      "continent": "亚洲"
+    },
+    {
+      "id": "KR",
+      "name": "韩国",
+      "continent": "亚洲"
+    },
+    {
+      "id": "DE",
+      "name": "德国",
+      "continent": "欧洲"
+    },
+    {
+      "id": "GB",
+      "name": "英国",
+      "continent": "欧洲"
+    },
+    {
+      "id": "FR",
+      "name": "法国",
+      "continent": "欧洲"
+    },
+    {
+      "id": "CA",
+      "name": "加拿大",
+      "continent": "北美洲"
+    },
+    {
+      "id": "IN",
+      "name": "印度",
+      "continent": "亚洲"
+    },
+    {
+      "id": "IL",
+      "name": "以色列",
+      "continent": "亚洲"
+    },
+    {
+      "id": "SG",
+      "name": "新加坡",
+      "continent": "亚洲"
+    },
+    {
+      "id": "RU",
+      "name": "俄罗斯",
+      "continent": "欧洲/亚洲"
+    },
+    {
+      "id": "BR",
+      "name": "巴西",
+      "continent": "南美洲"
+    },
+    {
+      "id": "AU",
+      "name": "澳大利亚",
+      "continent": "大洋洲"
+    },
+    {
+      "id": "NL",
+      "name": "荷兰",
+      "continent": "欧洲"
+    },
+    {
+      "id": "SE",
+      "name": "瑞典",
+      "continent": "欧洲"
+    },
+    {
+      "id": "CH",
+      "name": "瑞士",
+      "continent": "欧洲"
+    },
+    {
+      "id": "TW",
+      "name": "台湾",
+      "continent": "亚洲"
+    },
+    {
+      "id": "AE",
+      "name": "阿联酋",
+      "continent": "亚洲"
+    },
+    {
+      "id": "ID",
+      "name": "印尼",
+      "continent": "亚洲"
+    },
+    {
+      "id": "IT",
+      "name": "意大利",
+      "continent": "欧洲"
+    },
+    {
+      "id": "ES",
+      "name": "西班牙",
+      "continent": "欧洲"
+    },
+    {
+      "id": "MX",
+      "name": "墨西哥",
+      "continent": "北美洲"
+    },
+    {
+      "id": "ZA",
+      "name": "南非",
+      "continent": "非洲"
+    },
+    {
+      "id": "VN",
+      "name": "越南",
+      "continent": "亚洲"
+    },
+    {
+      "id": "TH",
+      "name": "泰国",
+      "continent": "亚洲"
+    },
+    {
+      "id": "MY",
+      "name": "马来西亚",
+      "continent": "亚洲"
+    },
+    {
+      "id": "PL",
+      "name": "波兰",
+      "continent": "欧洲"
+    },
+    {
+      "id": "FI",
+      "name": "芬兰",
+      "continent": "欧洲"
+    },
+    {
+      "id": "IE",
+      "name": "爱尔兰",
+      "continent": "欧洲"
+    },
+    {
+      "id": "NO",
+      "name": "挪威",
+      "continent": "欧洲"
+    },
+    {
+      "id": "DK",
+      "name": "丹麦",
+      "continent": "欧洲"
+    },
+    {
+      "id": "CZ",
+      "name": "捷克",
+      "continent": "欧洲"
+    },
+    {
+      "id": "RO",
+      "name": "罗马尼亚",
+      "continent": "欧洲"
+    },
+    {
+      "id": "UA",
+      "name": "乌克兰",
+      "continent": "欧洲"
+    },
+    {
+      "id": "AT",
+      "name": "奥地利",
+      "continent": "欧洲"
+    },
+    {
+      "id": "BE",
+      "name": "比利时",
+      "continent": "欧洲"
+    },
+    {
+      "id": "PT",
+      "name": "葡萄牙",
+      "continent": "欧洲"
+    },
+    {
+      "id": "GR",
+      "name": "希腊",
+      "continent": "欧洲"
+    },
+    {
+      "id": "HU",
+      "name": "匈牙利",
+      "continent": "欧洲"
+    },
+    {
+      "id": "SA",
+      "name": "沙特阿拉伯",
+      "continent": "亚洲"
+    },
+    {
+      "id": "TR",
+      "name": "土耳其",
+      "continent": "亚洲"
+    },
+    {
+      "id": "EG",
+      "name": "埃及",
+      "continent": "非洲"
+    },
+    {
+      "id": "NG",
+      "name": "尼日利亚",
+      "continent": "非洲"
+    },
+    {
+      "id": "KE",
+      "name": "肯尼亚",
+      "continent": "非洲"
+    },
+    {
+      "id": "MA",
+      "name": "摩洛哥",
+      "continent": "非洲"
+    },
+    {
+      "id": "AR",
+      "name": "阿根廷",
+      "continent": "南美洲"
+    },
+    {
+      "id": "CL",
+      "name": "智利",
+      "continent": "南美洲"
+    },
+    {
+      "id": "CO",
+      "name": "哥伦比亚",
+      "continent": "南美洲"
+    },
+    {
+      "id": "PE",
+      "name": "秘鲁",
+      "continent": "南美洲"
+    },
+    {
+      "id": "NZ",
+      "name": "新西兰",
+      "continent": "大洋洲"
+    },
+    {
+      "id": "PK",
+      "name": "巴基斯坦",
+      "continent": "亚洲"
+    },
+    {
+      "id": "BD",
+      "name": "孟加拉国",
+      "continent": "亚洲"
+    },
+    {
+      "id": "PH",
+      "name": "菲律宾",
+      "continent": "亚洲"
+    },
+    {
+      "id": "KZ",
+      "name": "哈萨克斯坦",
+      "continent": "亚洲"
+    },
+    {
+      "id": "YE",
+      "name": "也门",
+      "continent": "亚洲"
+    },
+    {
+      "id": "SY",
+      "name": "叙利亚",
+      "continent": "亚洲"
+    },
+    {
+      "id": "LB",
+      "name": "黎巴嫩",
+      "continent": "亚洲"
+    },
+    {
+      "id": "SD",
+      "name": "苏丹",
+      "continent": "非洲"
+    },
+    {
+      "id": "LY",
+      "name": "利比亚",
+      "continent": "非洲"
+    },
+    {
+      "id": "DZ",
+      "name": "阿尔及利亚",
+      "continent": "非洲"
+    },
+    {
+      "id": "AO",
+      "name": "安哥拉",
+      "continent": "非洲"
+    },
+    {
+      "id": "ZW",
+      "name": "津巴布韦",
+      "continent": "非洲"
+    },
+    {
+      "id": "ZM",
+      "name": "赞比亚",
+      "continent": "非洲"
+    },
+    {
+      "id": "MZ",
+      "name": "莫桑比克",
+      "continent": "非洲"
+    },
+    {
+      "id": "MG",
+      "name": "马达加斯加",
+      "continent": "非洲"
+    },
+    {
+      "id": "CD",
+      "name": "刚果民主共和国",
+      "continent": "非洲"
+    },
+    {
+      "id": "CG",
+      "name": "刚果共和国",
+      "continent": "非洲"
+    },
+    {
+      "id": "CM",
+      "name": "喀麦隆",
+      "continent": "非洲"
+    },
+    {
+      "id": "ML",
+      "name": "马里",
+      "continent": "非洲"
+    },
+    {
+      "id": "BF",
+      "name": "布基纳法索",
+      "continent": "非洲"
+    },
+    {
+      "id": "NE",
+      "name": "尼日尔",
+      "continent": "非洲"
+    },
+    {
+      "id": "TD",
+      "name": "乍得",
+      "continent": "非洲"
+    },
+    {
+      "id": "ET",
+      "name": "埃塞俄比亚",
+      "continent": "非洲"
+    },
+    {
+      "id": "TZ",
+      "name": "坦桑尼亚",
+      "continent": "非洲"
+    },
+    {
+      "id": "GH",
+      "name": "加纳",
+      "continent": "非洲"
+    },
+    {
+      "id": "CI",
+      "name": "科特迪瓦",
+      "continent": "非洲"
+    },
+    {
+      "id": "SN",
+      "name": "塞内加尔",
+      "continent": "非洲"
+    },
+    {
+      "id": "UG",
+      "name": "乌干达",
+      "continent": "非洲"
+    },
+    {
+      "id": "TN",
+      "name": "突尼斯",
+      "continent": "非洲"
+    },
+    {
+      "id": "IQ",
+      "name": "伊拉克",
+      "continent": "亚洲"
+    },
+    {
+      "id": "IR",
+      "name": "伊朗",
+      "continent": "亚洲"
+    },
+    {
+      "id": "JO",
+      "name": "约旦",
+      "continent": "亚洲"
+    },
+    {
+      "id": "QA",
+      "name": "卡塔尔",
+      "continent": "亚洲"
+    },
+    {
+      "id": "KW",
+      "name": "科威特",
+      "continent": "亚洲"
+    },
+    {
+      "id": "OM",
+      "name": "阿曼",
+      "continent": "亚洲"
+    },
+    {
+      "id": "UZ",
+      "name": "乌兹别克斯坦",
+      "continent": "亚洲"
+    },
+    {
+      "id": "LK",
+      "name": "斯里兰卡",
+      "continent": "亚洲"
+    },
+    {
+      "id": "NP",
+      "name": "尼泊尔",
+      "continent": "亚洲"
+    },
+    {
+      "id": "MM",
+      "name": "缅甸",
+      "continent": "亚洲"
+    },
+    {
+      "id": "KH",
+      "name": "柬埔寨",
+      "continent": "亚洲"
+    },
+    {
+      "id": "BG",
+      "name": "保加利亚",
+      "continent": "欧洲"
+    },
+    {
+      "id": "RS",
+      "name": "塞尔维亚",
+      "continent": "欧洲"
+    },
+    {
+      "id": "BY",
+      "name": "白俄罗斯",
+      "continent": "欧洲"
+    },
+    {
+      "id": "VE",
+      "name": "委内瑞拉",
+      "continent": "南美洲"
+    },
+    {
+      "id": "EC",
+      "name": "厄瓜多尔",
+      "continent": "南美洲"
+    },
+    {
+      "id": "UY",
+      "name": "乌拉圭",
+      "continent": "南美洲"
+    },
+    {
+      "id": "BO",
+      "name": "玻利维亚",
+      "continent": "南美洲"
+    },
+    {
+      "id": "PY",
+      "name": "巴拉圭",
+      "continent": "南美洲"
+    },
+    {
+      "id": "CR",
+      "name": "哥斯达黎加",
+      "continent": "北美洲"
+    },
+    {
+      "id": "PA",
+      "name": "巴拿马",
+      "continent": "北美洲"
+    },
+    {
+      "id": "CU",
+      "name": "古巴",
+      "continent": "北美洲"
+    }
+  ],
+  "cities": [
+    {
+      "id": "sf",
+      "name": "旧金山",
+      "country": "US",
+      "nx": 0.868333,
+      "ny": 0.313333,
+      "tier": 1,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sj",
+      "name": "圣何塞",
+      "country": "US",
+      "nx": 0.869722,
+      "ny": 0.315802,
+      "tier": 1,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "la",
+      "name": "洛杉矶",
+      "country": "US",
+      "nx": 0.88,
+      "ny": 0.331605,
+      "tier": 2,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sd",
+      "name": "圣地亚哥",
+      "country": "US",
+      "nx": 0.882778,
+      "ny": 0.338519,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "se",
+      "name": "西雅图",
+      "country": "US",
+      "nx": 0.868611,
+      "ny": 0.264938,
+      "tier": 1,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "po",
+      "name": "波特兰",
+      "country": "US",
+      "nx": 0.8675,
+      "ny": 0.275309,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ny",
+      "name": "纽约",
+      "country": "US",
+      "nx": 0.002778,
+      "ny": 0.299012,
+      "tier": 1,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bo",
+      "name": "波士顿",
+      "country": "US",
+      "nx": 0.010833,
+      "ny": 0.290617,
+      "tier": 1,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dc",
+      "name": "华盛顿",
+      "country": "US",
+      "nx": 0.994444,
+      "ny": 0.307901,
+      "tier": 2,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ph",
+      "name": "费城",
+      "country": "US",
+      "nx": 0.999444,
+      "ny": 0.302469,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ch",
+      "name": "芝加哥",
+      "country": "US",
+      "nx": 0.965,
+      "ny": 0.293086,
+      "tier": 2,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "de",
+      "name": "底特律",
+      "country": "US",
+      "nx": 0.977778,
+      "ny": 0.291111,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "au",
+      "name": "奥斯汀",
+      "country": "US",
+      "nx": 0.936944,
+      "ny": 0.35037,
+      "tier": 2,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "da",
+      "name": "达拉斯",
+      "country": "US",
+      "nx": 0.939444,
+      "ny": 0.338025,
+      "tier": 2,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ho",
+      "name": "休斯顿",
+      "country": "US",
+      "nx": 0.943333,
+      "ny": 0.35284,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mi",
+      "name": "迈阿密",
+      "country": "US",
+      "nx": 0.985556,
+      "ny": 0.372593,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "at",
+      "name": "亚特兰大",
+      "country": "US",
+      "nx": 0.973889,
+      "ny": 0.33358,
+      "tier": 2,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dv",
+      "name": "丹佛",
+      "country": "US",
+      "nx": 0.916667,
+      "ny": 0.303951,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "phx",
+      "name": "凤凰城",
+      "country": "US",
+      "nx": 0.896944,
+      "ny": 0.335062,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lv",
+      "name": "拉斯维加斯",
+      "country": "US",
+      "nx": 0.888611,
+      "ny": 0.321235,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sl",
+      "name": "盐湖城",
+      "country": "US",
+      "nx": 0.8975,
+      "ny": 0.298519,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mn",
+      "name": "明尼阿波利斯",
+      "country": "US",
+      "nx": 0.949167,
+      "ny": 0.277778,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "stl",
+      "name": "圣路易斯",
+      "country": "US",
+      "nx": 0.957778,
+      "ny": 0.309383,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "pi",
+      "name": "匹兹堡",
+      "country": "US",
+      "nx": 0.986111,
+      "ny": 0.300494,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "rd",
+      "name": "罗利",
+      "country": "US",
+      "nx": 0.99,
+      "ny": 0.32321,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cm",
+      "name": "哥伦布",
+      "country": "US",
+      "nx": 0.977778,
+      "ny": 0.302469,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ns",
+      "name": "纳什维尔",
+      "country": "US",
+      "nx": 0.967222,
+      "ny": 0.321235,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ci",
+      "name": "辛辛那提",
+      "country": "US",
+      "nx": 0.973611,
+      "ny": 0.306914,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "kc",
+      "name": "堪萨斯城",
+      "country": "US",
+      "nx": 0.945556,
+      "ny": 0.306914,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "or",
+      "name": "奥兰多",
+      "country": "US",
+      "nx": 0.982222,
+      "ny": 0.359259,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tp",
+      "name": "坦帕",
+      "country": "US",
+      "nx": 0.979167,
+      "ny": 0.361728,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sa",
+      "name": "圣安东尼奥",
+      "country": "US",
+      "nx": 0.934722,
+      "ny": 0.354815,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "om",
+      "name": "奥马哈",
+      "country": "US",
+      "nx": 0.941667,
+      "ny": 0.296049,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "md",
+      "name": "麦迪逊",
+      "country": "US",
+      "nx": 0.96,
+      "ny": 0.28716,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "an",
+      "name": "安克雷奇",
+      "country": "US",
+      "nx": 0.791944,
+      "ny": 0.197778,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hn",
+      "name": "檀香山",
+      "country": "US",
+      "nx": 0.769722,
+      "ny": 0.394815,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bj",
+      "name": "北京",
+      "country": "CN",
+      "nx": 0.531667,
+      "ny": 0.302963,
+      "tier": 1,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sh",
+      "name": "上海",
+      "country": "CN",
+      "nx": 0.545833,
+      "ny": 0.345926,
+      "tier": 1,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sz",
+      "name": "深圳",
+      "country": "CN",
+      "nx": 0.525278,
+      "ny": 0.388889,
+      "tier": 1,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "gz",
+      "name": "广州",
+      "country": "CN",
+      "nx": 0.523056,
+      "ny": 0.385926,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hz",
+      "name": "杭州",
+      "country": "CN",
+      "nx": 0.542222,
+      "ny": 0.35037,
+      "tier": 1,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cd",
+      "name": "成都",
+      "country": "CN",
+      "nx": 0.4975,
+      "ny": 0.348889,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "wh",
+      "name": "武汉",
+      "country": "CN",
+      "nx": 0.525833,
+      "ny": 0.348889,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "nj",
+      "name": "南京",
+      "country": "CN",
+      "nx": 0.538333,
+      "ny": 0.341481,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cq",
+      "name": "重庆",
+      "country": "CN",
+      "nx": 0.504444,
+      "ny": 0.354321,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "xa",
+      "name": "西安",
+      "country": "CN",
+      "nx": 0.510833,
+      "ny": 0.330617,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tj",
+      "name": "天津",
+      "country": "CN",
+      "nx": 0.533889,
+      "ny": 0.306914,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "su",
+      "name": "苏州",
+      "country": "CN",
+      "nx": 0.543333,
+      "ny": 0.345432,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dg",
+      "name": "东莞",
+      "country": "CN",
+      "nx": 0.524444,
+      "ny": 0.38642,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "zs",
+      "name": "珠海",
+      "country": "CN",
+      "nx": 0.523889,
+      "ny": 0.389877,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "fs",
+      "name": "佛山",
+      "country": "CN",
+      "nx": 0.5225,
+      "ny": 0.38642,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cs",
+      "name": "长沙",
+      "country": "CN",
+      "nx": 0.522222,
+      "ny": 0.360741,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "zz",
+      "name": "郑州",
+      "country": "CN",
+      "nx": 0.524167,
+      "ny": 0.328148,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "qd",
+      "name": "青岛",
+      "country": "CN",
+      "nx": 0.542778,
+      "ny": 0.321728,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dl",
+      "name": "大连",
+      "country": "CN",
+      "nx": 0.546111,
+      "ny": 0.307901,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "xm",
+      "name": "厦门",
+      "country": "CN",
+      "nx": 0.536389,
+      "ny": 0.379012,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "nb",
+      "name": "宁波",
+      "country": "CN",
+      "nx": 0.545833,
+      "ny": 0.352346,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "wx",
+      "name": "无锡",
+      "country": "CN",
+      "nx": 0.5425,
+      "ny": 0.343951,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hf",
+      "name": "合肥",
+      "country": "CN",
+      "nx": 0.533889,
+      "ny": 0.342963,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "jn",
+      "name": "济南",
+      "country": "CN",
+      "nx": 0.533333,
+      "ny": 0.318765,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "fz",
+      "name": "福州",
+      "country": "CN",
+      "nx": 0.539722,
+      "ny": 0.371111,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "km",
+      "name": "昆明",
+      "country": "CN",
+      "nx": 0.493611,
+      "ny": 0.376543,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "gy",
+      "name": "贵阳",
+      "country": "CN",
+      "nx": 0.504444,
+      "ny": 0.368642,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "nc",
+      "name": "南昌",
+      "country": "CN",
+      "nx": 0.530278,
+      "ny": 0.358272,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sy",
+      "name": "沈阳",
+      "country": "CN",
+      "nx": 0.551111,
+      "ny": 0.29358,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cc",
+      "name": "长春",
+      "country": "CN",
+      "nx": 0.556389,
+      "ny": 0.28321,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hrb",
+      "name": "哈尔滨",
+      "country": "CN",
+      "nx": 0.56,
+      "ny": 0.273827,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ty",
+      "name": "太原",
+      "country": "CN",
+      "nx": 0.520833,
+      "ny": 0.31284,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sjz",
+      "name": "石家庄",
+      "country": "CN",
+      "nx": 0.526389,
+      "ny": 0.312346,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "nn",
+      "name": "南宁",
+      "country": "CN",
+      "nx": 0.509167,
+      "ny": 0.387407,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ls",
+      "name": "拉萨",
+      "country": "CN",
+      "nx": 0.461389,
+      "ny": 0.353333,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "wl",
+      "name": "乌鲁木齐",
+      "country": "CN",
+      "nx": 0.451667,
+      "ny": 0.283704,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lz",
+      "name": "兰州",
+      "country": "CN",
+      "nx": 0.496667,
+      "ny": 0.321728,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "yc",
+      "name": "银川",
+      "country": "CN",
+      "nx": 0.503611,
+      "ny": 0.309877,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "xn",
+      "name": "西宁",
+      "country": "CN",
+      "nx": 0.491111,
+      "ny": 0.319259,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hh",
+      "name": "呼和浩特",
+      "country": "CN",
+      "nx": 0.518611,
+      "ny": 0.298519,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tk",
+      "name": "东京",
+      "country": "JP",
+      "nx": 0.596389,
+      "ny": 0.323704,
+      "tier": 1,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "yk",
+      "name": "横滨",
+      "country": "JP",
+      "nx": 0.596111,
+      "ny": 0.325185,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "os",
+      "name": "大阪",
+      "country": "JP",
+      "nx": 0.584722,
+      "ny": 0.328642,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ky",
+      "name": "京都",
+      "country": "JP",
+      "nx": 0.585556,
+      "ny": 0.32716,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ng",
+      "name": "名古屋",
+      "country": "JP",
+      "nx": 0.588611,
+      "ny": 0.326173,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "fk",
+      "name": "福冈",
+      "country": "JP",
+      "nx": 0.570556,
+      "ny": 0.334074,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sp",
+      "name": "札幌",
+      "country": "JP",
+      "nx": 0.600833,
+      "ny": 0.28716,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "kb",
+      "name": "神户",
+      "country": "JP",
+      "nx": 0.583889,
+      "ny": 0.328642,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sdj",
+      "name": "仙台",
+      "country": "JP",
+      "nx": 0.599722,
+      "ny": 0.310864,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hi",
+      "name": "广岛",
+      "country": "JP",
+      "nx": 0.576389,
+      "ny": 0.330123,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ts",
+      "name": "筑波",
+      "country": "JP",
+      "nx": 0.5975,
+      "ny": 0.321728,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "seoul",
+      "name": "首尔",
+      "country": "KR",
+      "nx": 0.561111,
+      "ny": 0.314321,
+      "tier": 1,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bs",
+      "name": "釜山",
+      "country": "KR",
+      "nx": 0.566944,
+      "ny": 0.326173,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ic",
+      "name": "仁川",
+      "country": "KR",
+      "nx": 0.560278,
+      "ny": 0.314815,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dj",
+      "name": "大田",
+      "country": "KR",
+      "nx": 0.562222,
+      "ny": 0.320741,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dgk",
+      "name": "大邱",
+      "country": "KR",
+      "nx": 0.565556,
+      "ny": 0.322716,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "gj",
+      "name": "光州",
+      "country": "KR",
+      "nx": 0.560833,
+      "ny": 0.326173,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sw",
+      "name": "水原",
+      "country": "KR",
+      "nx": 0.561111,
+      "ny": 0.315802,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "pn",
+      "name": "板桥",
+      "country": "KR",
+      "nx": 0.561389,
+      "ny": 0.315309,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ber",
+      "name": "柏林",
+      "country": "DE",
+      "nx": 0.245556,
+      "ny": 0.240741,
+      "tier": 1,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mun",
+      "name": "慕尼黑",
+      "country": "DE",
+      "nx": 0.240556,
+      "ny": 0.262469,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "fra",
+      "name": "法兰克福",
+      "country": "DE",
+      "nx": 0.2325,
+      "ny": 0.252593,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ham",
+      "name": "汉堡",
+      "country": "DE",
+      "nx": 0.236111,
+      "ny": 0.235309,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "stg",
+      "name": "斯图加特",
+      "country": "DE",
+      "nx": 0.233889,
+      "ny": 0.259012,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "col",
+      "name": "科隆",
+      "country": "DE",
+      "nx": 0.227778,
+      "ny": 0.248642,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dus",
+      "name": "杜塞尔多夫",
+      "country": "DE",
+      "nx": 0.227222,
+      "ny": 0.24716,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lei",
+      "name": "莱比锡",
+      "country": "DE",
+      "nx": 0.242778,
+      "ny": 0.246667,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dr",
+      "name": "德累斯顿",
+      "country": "DE",
+      "nx": 0.246389,
+      "ny": 0.248148,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lon",
+      "name": "伦敦",
+      "country": "GB",
+      "nx": 0.208056,
+      "ny": 0.245679,
+      "tier": 1,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cam",
+      "name": "剑桥",
+      "country": "GB",
+      "nx": 0.208611,
+      "ny": 0.242222,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ox",
+      "name": "牛津",
+      "country": "GB",
+      "nx": 0.204722,
+      "ny": 0.244198,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "man",
+      "name": "曼彻斯特",
+      "country": "GB",
+      "nx": 0.202222,
+      "ny": 0.235802,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bir",
+      "name": "伯明翰",
+      "country": "GB",
+      "nx": 0.203056,
+      "ny": 0.240741,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "edi",
+      "name": "爱丁堡",
+      "country": "GB",
+      "nx": 0.199444,
+      "ny": 0.223951,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "brs",
+      "name": "布里斯托",
+      "country": "GB",
+      "nx": 0.201111,
+      "ny": 0.245679,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lee",
+      "name": "利兹",
+      "country": "GB",
+      "nx": 0.204167,
+      "ny": 0.234321,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "gls",
+      "name": "格拉斯哥",
+      "country": "GB",
+      "nx": 0.196389,
+      "ny": 0.223951,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "par",
+      "name": "巴黎",
+      "country": "FR",
+      "nx": 0.214722,
+      "ny": 0.258519,
+      "tier": 1,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lyo",
+      "name": "里昂",
+      "country": "FR",
+      "nx": 0.221667,
+      "ny": 0.273827,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mar",
+      "name": "马赛",
+      "country": "FR",
+      "nx": 0.223333,
+      "ny": 0.286173,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tls",
+      "name": "图卢兹",
+      "country": "FR",
+      "nx": 0.212222,
+      "ny": 0.284691,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lil",
+      "name": "里尔",
+      "country": "FR",
+      "nx": 0.216944,
+      "ny": 0.250123,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bdx",
+      "name": "波尔多",
+      "country": "FR",
+      "nx": 0.206667,
+      "ny": 0.278765,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "gre",
+      "name": "格勒诺布尔",
+      "country": "FR",
+      "nx": 0.224167,
+      "ny": 0.27679,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "nce",
+      "name": "尼斯",
+      "country": "FR",
+      "nx": 0.228611,
+      "ny": 0.284198,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tor",
+      "name": "多伦多",
+      "country": "CA",
+      "nx": 0.987778,
+      "ny": 0.284198,
+      "tier": 1,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "van",
+      "name": "温哥华",
+      "country": "CA",
+      "nx": 0.866389,
+      "ny": 0.256543,
+      "tier": 2,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mtl",
+      "name": "蒙特利尔",
+      "country": "CA",
+      "nx": 0.003889,
+      "ny": 0.275309,
+      "tier": 2,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ott",
+      "name": "渥太华",
+      "country": "CA",
+      "nx": 0.998056,
+      "ny": 0.275802,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cal",
+      "name": "卡尔加里",
+      "country": "CA",
+      "nx": 0.891389,
+      "ny": 0.248148,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "edm",
+      "name": "埃德蒙顿",
+      "country": "CA",
+      "nx": 0.893056,
+      "ny": 0.235802,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "que",
+      "name": "魁北克",
+      "country": "CA",
+      "nx": 0.010556,
+      "ny": 0.268889,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "wat",
+      "name": "滑铁卢",
+      "country": "CA",
+      "nx": 0.984722,
+      "ny": 0.285185,
+      "tier": 2,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "blr",
+      "name": "班加罗尔",
+      "country": "IN",
+      "nx": 0.423889,
+      "ny": 0.436296,
+      "tier": 1,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mum",
+      "name": "孟买",
+      "country": "IN",
+      "nx": 0.410833,
+      "ny": 0.405679,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "del",
+      "name": "新德里",
+      "country": "IN",
+      "nx": 0.422778,
+      "ny": 0.358765,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hyd",
+      "name": "海得拉巴",
+      "country": "IN",
+      "nx": 0.426389,
+      "ny": 0.414074,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "che",
+      "name": "金奈",
+      "country": "IN",
+      "nx": 0.431389,
+      "ny": 0.435309,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "pne",
+      "name": "浦那",
+      "country": "IN",
+      "nx": 0.413611,
+      "ny": 0.408642,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ahm",
+      "name": "艾哈迈达巴德",
+      "country": "IN",
+      "nx": 0.41,
+      "ny": 0.38642,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "kol",
+      "name": "加尔各答",
+      "country": "IN",
+      "nx": 0.453889,
+      "ny": 0.388395,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "jai",
+      "name": "斋浦尔",
+      "country": "IN",
+      "nx": 0.418889,
+      "ny": 0.36716,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "noi",
+      "name": "诺伊达",
+      "country": "IN",
+      "nx": 0.423333,
+      "ny": 0.358765,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tlv",
+      "name": "特拉维夫",
+      "country": "IL",
+      "nx": 0.305,
+      "ny": 0.341481,
+      "tier": 1,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "jer",
+      "name": "耶路撒冷",
+      "country": "IL",
+      "nx": 0.306111,
+      "ny": 0.342963,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hai",
+      "name": "海法",
+      "country": "IL",
+      "nx": 0.305556,
+      "ny": 0.338025,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "herz",
+      "name": "赫兹利亚",
+      "country": "IL",
+      "nx": 0.305,
+      "ny": 0.340988,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sgp",
+      "name": "新加坡",
+      "country": "SG",
+      "nx": 0.496667,
+      "ny": 0.49358,
+      "tier": 1,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "msk",
+      "name": "莫斯科",
+      "country": "RU",
+      "nx": 0.312778,
+      "ny": 0.224444,
+      "tier": 2,
+      "continent": "欧洲/亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "spb",
+      "name": "圣彼得堡",
+      "country": "RU",
+      "nx": 0.2925,
+      "ny": 0.204198,
+      "tier": 3,
+      "continent": "欧洲/亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "nsk",
+      "name": "新西伯利亚",
+      "country": "RU",
+      "nx": 0.438889,
+      "ny": 0.228395,
+      "tier": 3,
+      "continent": "欧洲/亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "kzn",
+      "name": "喀山",
+      "country": "RU",
+      "nx": 0.344722,
+      "ny": 0.224444,
+      "tier": 3,
+      "continent": "欧洲/亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "eka",
+      "name": "叶卡捷琳堡",
+      "country": "RU",
+      "nx": 0.376667,
+      "ny": 0.219506,
+      "tier": 3,
+      "continent": "欧洲/亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "skx",
+      "name": "斯科尔科沃",
+      "country": "RU",
+      "nx": 0.312222,
+      "ny": 0.224938,
+      "tier": 3,
+      "continent": "欧洲/亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sao",
+      "name": "圣保罗",
+      "country": "BR",
+      "nx": 0.078889,
+      "ny": 0.616049,
+      "tier": 1,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "rio",
+      "name": "里约热内卢",
+      "country": "BR",
+      "nx": 0.088333,
+      "ny": 0.613086,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bsb",
+      "name": "巴西利亚",
+      "country": "BR",
+      "nx": 0.075278,
+      "ny": 0.578025,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bel",
+      "name": "贝洛奥里藏特",
+      "country": "BR",
+      "nx": 0.086389,
+      "ny": 0.598272,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "poa",
+      "name": "阿雷格里港",
+      "country": "BR",
+      "nx": 0.066111,
+      "ny": 0.648148,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cur",
+      "name": "库里蒂巴",
+      "country": "BR",
+      "nx": 0.071389,
+      "ny": 0.625432,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cmp",
+      "name": "坎皮纳斯",
+      "country": "BR",
+      "nx": 0.0775,
+      "ny": 0.613086,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "syd",
+      "name": "悉尼",
+      "country": "AU",
+      "nx": 0.628333,
+      "ny": 0.667407,
+      "tier": 2,
+      "continent": "大洋洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mel",
+      "name": "墨尔本",
+      "country": "AU",
+      "nx": 0.611111,
+      "ny": 0.686667,
+      "tier": 2,
+      "continent": "大洋洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bne",
+      "name": "布里斯班",
+      "country": "AU",
+      "nx": 0.633333,
+      "ny": 0.635802,
+      "tier": 3,
+      "continent": "大洋洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "per",
+      "name": "珀斯",
+      "country": "AU",
+      "nx": 0.530278,
+      "ny": 0.657531,
+      "tier": 3,
+      "continent": "大洋洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "adl",
+      "name": "阿德莱德",
+      "country": "AU",
+      "nx": 0.593333,
+      "ny": 0.672346,
+      "tier": 3,
+      "continent": "大洋洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cbr",
+      "name": "堪培拉",
+      "country": "AU",
+      "nx": 0.6225,
+      "ny": 0.674321,
+      "tier": 3,
+      "continent": "大洋洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ams",
+      "name": "阿姆斯特丹",
+      "country": "NL",
+      "nx": 0.221944,
+      "ny": 0.241235,
+      "tier": 1,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "rot",
+      "name": "鹿特丹",
+      "country": "NL",
+      "nx": 0.220833,
+      "ny": 0.243704,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dhg",
+      "name": "海牙",
+      "country": "NL",
+      "nx": 0.220278,
+      "ny": 0.242716,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "eid",
+      "name": "埃因霍温",
+      "country": "NL",
+      "nx": 0.223611,
+      "ny": 0.246173,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "utr",
+      "name": "乌得勒支",
+      "country": "NL",
+      "nx": 0.2225,
+      "ny": 0.242716,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "stk",
+      "name": "斯德哥尔摩",
+      "country": "SE",
+      "nx": 0.258611,
+      "ny": 0.20716,
+      "tier": 1,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "got",
+      "name": "哥德堡",
+      "country": "SE",
+      "nx": 0.241389,
+      "ny": 0.215062,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mal",
+      "name": "马尔默",
+      "country": "SE",
+      "nx": 0.244444,
+      "ny": 0.225432,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "upp",
+      "name": "乌普萨拉",
+      "country": "SE",
+      "nx": 0.257222,
+      "ny": 0.204198,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lin",
+      "name": "林雪平",
+      "country": "SE",
+      "nx": 0.251667,
+      "ny": 0.211605,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "zur",
+      "name": "苏黎世",
+      "country": "CH",
+      "nx": 0.231944,
+      "ny": 0.265926,
+      "tier": 1,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "gen",
+      "name": "日内瓦",
+      "country": "CH",
+      "nx": 0.225278,
+      "ny": 0.271852,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bas",
+      "name": "巴塞尔",
+      "country": "CH",
+      "nx": 0.229444,
+      "ny": 0.264938,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ber_ch",
+      "name": "伯尔尼",
+      "country": "CH",
+      "nx": 0.228889,
+      "ny": 0.268395,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lau",
+      "name": "洛桑",
+      "country": "CH",
+      "nx": 0.226667,
+      "ny": 0.27037,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tpe",
+      "name": "台北",
+      "country": "TW",
+      "nx": 0.546111,
+      "ny": 0.376543,
+      "tier": 1,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hsc",
+      "name": "新竹",
+      "country": "TW",
+      "nx": 0.544444,
+      "ny": 0.377531,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tcg",
+      "name": "台中",
+      "country": "TW",
+      "nx": 0.543611,
+      "ny": 0.380988,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "khh",
+      "name": "高雄",
+      "country": "TW",
+      "nx": 0.5425,
+      "ny": 0.388395,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tns",
+      "name": "台南",
+      "country": "TW",
+      "nx": 0.542222,
+      "ny": 0.38642,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dxb",
+      "name": "迪拜",
+      "country": "AE",
+      "nx": 0.361944,
+      "ny": 0.375556,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "auh",
+      "name": "阿布扎比",
+      "country": "AE",
+      "nx": 0.359444,
+      "ny": 0.379012,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "shj",
+      "name": "沙迦",
+      "country": "AE",
+      "nx": 0.362222,
+      "ny": 0.374568,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "jkt",
+      "name": "雅加达",
+      "country": "ID",
+      "nx": 0.505,
+      "ny": 0.530617,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bdg",
+      "name": "万隆",
+      "country": "ID",
+      "nx": 0.507222,
+      "ny": 0.534074,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sub",
+      "name": "泗水",
+      "country": "ID",
+      "nx": 0.521389,
+      "ny": 0.536049,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ygy",
+      "name": "日惹",
+      "country": "ID",
+      "nx": 0.515,
+      "ny": 0.538519,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "rom",
+      "name": "罗马",
+      "country": "IT",
+      "nx": 0.243056,
+      "ny": 0.293086,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mil",
+      "name": "米兰",
+      "country": "IT",
+      "nx": 0.233889,
+      "ny": 0.275309,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tur",
+      "name": "都灵",
+      "country": "IT",
+      "nx": 0.229722,
+      "ny": 0.277284,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bol",
+      "name": "博洛尼亚",
+      "country": "IT",
+      "nx": 0.239722,
+      "ny": 0.280247,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "nap",
+      "name": "那不勒斯",
+      "country": "IT",
+      "nx": 0.248056,
+      "ny": 0.298025,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mad",
+      "name": "马德里",
+      "country": "ES",
+      "nx": 0.198056,
+      "ny": 0.300494,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bcn",
+      "name": "巴塞罗那",
+      "country": "ES",
+      "nx": 0.214444,
+      "ny": 0.295556,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "val",
+      "name": "瓦伦西亚",
+      "country": "ES",
+      "nx": 0.207222,
+      "ny": 0.304938,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sev",
+      "name": "塞维利亚",
+      "country": "ES",
+      "nx": 0.191667,
+      "ny": 0.315309,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bil",
+      "name": "毕尔巴鄂",
+      "country": "ES",
+      "nx": 0.200278,
+      "ny": 0.286173,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mex",
+      "name": "墨西哥城",
+      "country": "MX",
+      "nx": 0.933056,
+      "ny": 0.404198,
+      "tier": 2,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "gdl",
+      "name": "瓜达拉哈拉",
+      "country": "MX",
+      "nx": 0.921389,
+      "ny": 0.397778,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mty",
+      "name": "蒙特雷",
+      "country": "MX",
+      "nx": 0.929722,
+      "ny": 0.373086,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "pue",
+      "name": "普埃布拉",
+      "country": "MX",
+      "nx": 0.935556,
+      "ny": 0.406173,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "jnb",
+      "name": "约翰内斯堡",
+      "country": "ZA",
+      "nx": 0.286111,
+      "ny": 0.629383,
+      "tier": 2,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cpt",
+      "name": "开普敦",
+      "country": "ZA",
+      "nx": 0.259444,
+      "ny": 0.667407,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dur",
+      "name": "德班",
+      "country": "ZA",
+      "nx": 0.294444,
+      "ny": 0.647654,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "prt",
+      "name": "比勒陀利亚",
+      "country": "ZA",
+      "nx": 0.286667,
+      "ny": 0.626914,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hcm",
+      "name": "胡志明市",
+      "country": "VN",
+      "nx": 0.504722,
+      "ny": 0.446667,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "han",
+      "name": "河内",
+      "country": "VN",
+      "nx": 0.502222,
+      "ny": 0.396296,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dng",
+      "name": "岘港",
+      "country": "VN",
+      "nx": 0.508889,
+      "ny": 0.420494,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bkk",
+      "name": "曼谷",
+      "country": "TH",
+      "nx": 0.4875,
+      "ny": 0.431852,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "chi",
+      "name": "清迈",
+      "country": "TH",
+      "nx": 0.483333,
+      "ny": 0.40716,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "pty",
+      "name": "芭提雅",
+      "country": "TH",
+      "nx": 0.488611,
+      "ny": 0.436296,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "kul",
+      "name": "吉隆坡",
+      "country": "MY",
+      "nx": 0.490833,
+      "ny": 0.484691,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "pen",
+      "name": "槟城",
+      "country": "MY",
+      "nx": 0.486944,
+      "ny": 0.473333,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "joh",
+      "name": "新山",
+      "country": "MY",
+      "nx": 0.496389,
+      "ny": 0.492593,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "waw",
+      "name": "华沙",
+      "country": "PL",
+      "nx": 0.266667,
+      "ny": 0.242222,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "krk",
+      "name": "克拉科夫",
+      "country": "PL",
+      "nx": 0.263611,
+      "ny": 0.252593,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "wro",
+      "name": "弗罗茨瓦夫",
+      "country": "PL",
+      "nx": 0.255556,
+      "ny": 0.247654,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "gd",
+      "name": "格但斯克",
+      "country": "PL",
+      "nx": 0.26,
+      "ny": 0.231358,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hel",
+      "name": "赫尔辛基",
+      "country": "FI",
+      "nx": 0.2775,
+      "ny": 0.202716,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "esp",
+      "name": "埃斯波",
+      "country": "FI",
+      "nx": 0.276944,
+      "ny": 0.202716,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tmp",
+      "name": "坦佩雷",
+      "country": "FI",
+      "nx": 0.274444,
+      "ny": 0.196296,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "oul",
+      "name": "奥卢",
+      "country": "FI",
+      "nx": 0.279167,
+      "ny": 0.179012,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dub",
+      "name": "都柏林",
+      "country": "IE",
+      "nx": 0.190833,
+      "ny": 0.23679,
+      "tier": 1,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "crk",
+      "name": "科克",
+      "country": "IE",
+      "nx": 0.184722,
+      "ny": 0.243704,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "gal",
+      "name": "戈尔韦",
+      "country": "IE",
+      "nx": 0.183056,
+      "ny": 0.23679,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lim",
+      "name": "利默里克",
+      "country": "IE",
+      "nx": 0.184444,
+      "ny": 0.239753,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "osl",
+      "name": "奥斯陆",
+      "country": "NO",
+      "nx": 0.238056,
+      "ny": 0.204198,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bgo",
+      "name": "卑尔根",
+      "country": "NO",
+      "nx": 0.223056,
+      "ny": 0.201728,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "trd",
+      "name": "特隆赫姆",
+      "country": "NO",
+      "nx": 0.237222,
+      "ny": 0.186914,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cph",
+      "name": "哥本哈根",
+      "country": "DK",
+      "nx": 0.243333,
+      "ny": 0.224938,
+      "tier": 1,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "aar",
+      "name": "奥胡斯",
+      "country": "DK",
+      "nx": 0.236667,
+      "ny": 0.222469,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ode",
+      "name": "欧登塞",
+      "country": "DK",
+      "nx": 0.237222,
+      "ny": 0.22642,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "prg",
+      "name": "布拉格",
+      "country": "CZ",
+      "nx": 0.248333,
+      "ny": 0.252593,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "brn",
+      "name": "布尔诺",
+      "country": "CZ",
+      "nx": 0.254444,
+      "ny": 0.257037,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "buc",
+      "name": "布加勒斯特",
+      "country": "RO",
+      "nx": 0.280833,
+      "ny": 0.280741,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "clj",
+      "name": "克卢日",
+      "country": "RO",
+      "nx": 0.273889,
+      "ny": 0.268889,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "kyv",
+      "name": "基辅",
+      "country": "UA",
+      "nx": 0.293056,
+      "ny": 0.250617,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lvi",
+      "name": "利沃夫",
+      "country": "UA",
+      "nx": 0.275,
+      "ny": 0.254074,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "vie",
+      "name": "维也纳",
+      "country": "AT",
+      "nx": 0.253889,
+      "ny": 0.261975,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "grz",
+      "name": "格拉茨",
+      "country": "AT",
+      "nx": 0.251111,
+      "ny": 0.267407,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bru",
+      "name": "布鲁塞尔",
+      "country": "BE",
+      "nx": 0.220556,
+      "ny": 0.249136,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ant",
+      "name": "安特卫普",
+      "country": "BE",
+      "nx": 0.220556,
+      "ny": 0.24716,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lis",
+      "name": "里斯本",
+      "country": "PT",
+      "nx": 0.183056,
+      "ny": 0.308889,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "opo",
+      "name": "波尔图",
+      "country": "PT",
+      "nx": 0.184444,
+      "ny": 0.296543,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ath",
+      "name": "雅典",
+      "country": "GR",
+      "nx": 0.274167,
+      "ny": 0.312346,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "the",
+      "name": "塞萨洛尼基",
+      "country": "GR",
+      "nx": 0.271944,
+      "ny": 0.299506,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bud",
+      "name": "布达佩斯",
+      "country": "HU",
+      "nx": 0.261111,
+      "ny": 0.265432,
+      "tier": 2,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "deb",
+      "name": "德布勒森",
+      "country": "HU",
+      "nx": 0.268333,
+      "ny": 0.265432,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ruh",
+      "name": "利雅得",
+      "country": "SA",
+      "nx": 0.338056,
+      "ny": 0.378519,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "jdh",
+      "name": "吉达",
+      "country": "SA",
+      "nx": 0.317222,
+      "ny": 0.393827,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ist",
+      "name": "伊斯坦布尔",
+      "country": "TR",
+      "nx": 0.288611,
+      "ny": 0.297531,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ank",
+      "name": "安卡拉",
+      "country": "TR",
+      "nx": 0.299722,
+      "ny": 0.302963,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "izm",
+      "name": "伊兹密尔",
+      "country": "TR",
+      "nx": 0.283611,
+      "ny": 0.31037,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cai",
+      "name": "开罗",
+      "country": "EG",
+      "nx": 0.295,
+      "ny": 0.351852,
+      "tier": 2,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "alx",
+      "name": "亚历山大",
+      "country": "EG",
+      "nx": 0.291389,
+      "ny": 0.345926,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lag",
+      "name": "拉各斯",
+      "country": "NG",
+      "nx": 0.217778,
+      "ny": 0.467901,
+      "tier": 2,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "abj",
+      "name": "阿布贾",
+      "country": "NG",
+      "nx": 0.229167,
+      "ny": 0.455062,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "nbo",
+      "name": "内罗毕",
+      "country": "KE",
+      "nx": 0.310556,
+      "ny": 0.50642,
+      "tier": 2,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mba",
+      "name": "蒙巴萨",
+      "country": "KE",
+      "nx": 0.318611,
+      "ny": 0.519753,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cas",
+      "name": "卡萨布兰卡",
+      "country": "MA",
+      "nx": 0.187222,
+      "ny": 0.334074,
+      "tier": 2,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "rab",
+      "name": "拉巴特",
+      "country": "MA",
+      "nx": 0.189444,
+      "ny": 0.332099,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bue",
+      "name": "布宜诺斯艾利斯",
+      "country": "AR",
+      "nx": 0.046111,
+      "ny": 0.670864,
+      "tier": 2,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cor",
+      "name": "科尔多瓦",
+      "country": "AR",
+      "nx": 0.03,
+      "ny": 0.655062,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ros",
+      "name": "罗萨里奥",
+      "country": "AR",
+      "nx": 0.04,
+      "ny": 0.662469,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "scl",
+      "name": "圣地亚哥",
+      "country": "CL",
+      "nx": 0.011944,
+      "ny": 0.664938,
+      "tier": 2,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "valp",
+      "name": "瓦尔帕莱索",
+      "country": "CL",
+      "nx": 0.009444,
+      "ny": 0.662963,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bog",
+      "name": "波哥大",
+      "country": "CO",
+      "nx": 0.0025,
+      "ny": 0.477284,
+      "tier": 2,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "med",
+      "name": "麦德林",
+      "country": "CO",
+      "nx": 0.998333,
+      "ny": 0.469383,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lima",
+      "name": "利马",
+      "country": "PE",
+      "nx": 0.994444,
+      "ny": 0.559259,
+      "tier": 2,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "are",
+      "name": "阿雷基帕",
+      "country": "PE",
+      "nx": 0.009722,
+      "ny": 0.580988,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "akl",
+      "name": "奥克兰",
+      "country": "NZ",
+      "nx": 0.693889,
+      "ny": 0.681728,
+      "tier": 2,
+      "continent": "大洋洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "wlg",
+      "name": "惠灵顿",
+      "country": "NZ",
+      "nx": 0.693889,
+      "ny": 0.703951,
+      "tier": 3,
+      "continent": "大洋洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "chc",
+      "name": "基督城",
+      "country": "NZ",
+      "nx": 0.687778,
+      "ny": 0.714815,
+      "tier": 3,
+      "continent": "大洋洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "khi",
+      "name": "卡拉奇",
+      "country": "PK",
+      "nx": 0.394444,
+      "ny": 0.377037,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "isb",
+      "name": "伊斯兰堡",
+      "country": "PK",
+      "nx": 0.411389,
+      "ny": 0.33358,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lhe",
+      "name": "拉合尔",
+      "country": "PK",
+      "nx": 0.415,
+      "ny": 0.344444,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dac",
+      "name": "达卡",
+      "country": "BD",
+      "nx": 0.459444,
+      "ny": 0.382469,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ctg",
+      "name": "吉大港",
+      "country": "BD",
+      "nx": 0.463333,
+      "ny": 0.389877,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mnl",
+      "name": "马尼拉",
+      "country": "PH",
+      "nx": 0.544444,
+      "ny": 0.427901,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ceb",
+      "name": "宿务",
+      "country": "PH",
+      "nx": 0.5525,
+      "ny": 0.449136,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dvo",
+      "name": "达沃",
+      "country": "PH",
+      "nx": 0.557222,
+      "ny": 0.464938,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ala",
+      "name": "阿拉木图",
+      "country": "KZ",
+      "nx": 0.421944,
+      "ny": 0.286667,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "nur",
+      "name": "努尔苏丹",
+      "country": "KZ",
+      "nx": 0.406667,
+      "ny": 0.24716,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "add",
+      "name": "亚的斯亚贝巴",
+      "country": "ET",
+      "nx": 0.315833,
+      "ny": 0.455556,
+      "tier": 2,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dir",
+      "name": "德雷达瓦",
+      "country": "ET",
+      "nx": 0.324722,
+      "ny": 0.452593,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bah",
+      "name": "巴赫达尔",
+      "country": "ET",
+      "nx": 0.312222,
+      "ny": 0.442716,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dar",
+      "name": "达累斯萨拉姆",
+      "country": "TZ",
+      "nx": 0.3175,
+      "ny": 0.53358,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "zzn",
+      "name": "桑给巴尔",
+      "country": "TZ",
+      "nx": 0.317222,
+      "ny": 0.530617,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ark",
+      "name": "阿鲁沙",
+      "country": "TZ",
+      "nx": 0.310278,
+      "ny": 0.51679,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "acc",
+      "name": "阿克拉",
+      "country": "GH",
+      "nx": 0.207778,
+      "ny": 0.472346,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "kum",
+      "name": "库马西",
+      "country": "GH",
+      "nx": 0.203889,
+      "ny": 0.466914,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "abj2",
+      "name": "阿比让",
+      "country": "CI",
+      "nx": 0.197222,
+      "ny": 0.473827,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "yam",
+      "name": "亚穆苏克罗",
+      "country": "CI",
+      "nx": 0.193611,
+      "ny": 0.46642,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dkr",
+      "name": "达喀尔",
+      "country": "SN",
+      "nx": 0.159722,
+      "ny": 0.427407,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tou",
+      "name": "图巴",
+      "country": "SN",
+      "nx": 0.163889,
+      "ny": 0.42642,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "kla",
+      "name": "坎帕拉",
+      "country": "UG",
+      "nx": 0.298889,
+      "ny": 0.498519,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tun",
+      "name": "突尼斯",
+      "country": "TN",
+      "nx": 0.236667,
+      "ny": 0.318272,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sfx",
+      "name": "斯法克斯",
+      "country": "TN",
+      "nx": 0.238333,
+      "ny": 0.328642,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bgd",
+      "name": "巴格达",
+      "country": "IQ",
+      "nx": 0.331667,
+      "ny": 0.335556,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bsr",
+      "name": "巴士拉",
+      "country": "IQ",
+      "nx": 0.341111,
+      "ny": 0.349383,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "thr",
+      "name": "德黑兰",
+      "country": "IR",
+      "nx": 0.351111,
+      "ny": 0.323704,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "isf",
+      "name": "伊斯法罕",
+      "country": "IR",
+      "nx": 0.351944,
+      "ny": 0.338519,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mhd",
+      "name": "马什哈德",
+      "country": "IR",
+      "nx": 0.373889,
+      "ny": 0.320741,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "shz",
+      "name": "设拉子",
+      "country": "IR",
+      "nx": 0.354167,
+      "ny": 0.353827,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tbz",
+      "name": "大不里士",
+      "country": "IR",
+      "nx": 0.336944,
+      "ny": 0.311852,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "amm",
+      "name": "安曼",
+      "country": "JO",
+      "nx": 0.308056,
+      "ny": 0.342469,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "doh",
+      "name": "多哈",
+      "country": "QA",
+      "nx": 0.351389,
+      "ny": 0.375062,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "kwi",
+      "name": "科威特城",
+      "country": "KW",
+      "nx": 0.341389,
+      "ny": 0.354815,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mct",
+      "name": "马斯喀特",
+      "country": "OM",
+      "nx": 0.371111,
+      "ny": 0.383457,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sah",
+      "name": "萨那",
+      "country": "YE",
+      "nx": 0.331111,
+      "ny": 0.423951,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ade",
+      "name": "亚丁",
+      "country": "YE",
+      "nx": 0.333333,
+      "ny": 0.43679,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dam",
+      "name": "大马士革",
+      "country": "SY",
+      "nx": 0.309167,
+      "ny": 0.334568,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "alp",
+      "name": "阿勒颇",
+      "country": "SY",
+      "nx": 0.311667,
+      "ny": 0.321235,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bey",
+      "name": "贝鲁特",
+      "country": "LB",
+      "nx": 0.306944,
+      "ny": 0.332593,
+      "tier": 2,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "krt",
+      "name": "喀土穆",
+      "country": "SD",
+      "nx": 0.298611,
+      "ny": 0.422963,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tip",
+      "name": "的黎波里",
+      "country": "LY",
+      "nx": 0.245,
+      "ny": 0.337531,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "alg",
+      "name": "阿尔及尔",
+      "country": "DZ",
+      "nx": 0.216944,
+      "ny": 0.318272,
+      "tier": 2,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ora",
+      "name": "奥兰",
+      "country": "DZ",
+      "nx": 0.206667,
+      "ny": 0.323704,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lad",
+      "name": "罗安达",
+      "country": "AO",
+      "nx": 0.245,
+      "ny": 0.543457,
+      "tier": 2,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hre",
+      "name": "哈拉雷",
+      "country": "ZW",
+      "nx": 0.294444,
+      "ny": 0.587901,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lun",
+      "name": "卢萨卡",
+      "country": "ZM",
+      "nx": 0.286944,
+      "ny": 0.576049,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mpm",
+      "name": "马普托",
+      "country": "MZ",
+      "nx": 0.298889,
+      "ny": 0.627901,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tnr",
+      "name": "塔那那利佛",
+      "country": "MG",
+      "nx": 0.340278,
+      "ny": 0.593333,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "fih",
+      "name": "金沙萨",
+      "country": "CD",
+      "nx": 0.250833,
+      "ny": 0.521235,
+      "tier": 2,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lbm",
+      "name": "卢本巴希",
+      "country": "CD",
+      "nx": 0.284722,
+      "ny": 0.557778,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bzv",
+      "name": "布拉柴维尔",
+      "country": "CG",
+      "nx": 0.250833,
+      "ny": 0.521235,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dla",
+      "name": "杜阿拉",
+      "country": "CM",
+      "nx": 0.235278,
+      "ny": 0.480247,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "yao",
+      "name": "雅温得",
+      "country": "CM",
+      "nx": 0.240278,
+      "ny": 0.480741,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "dkr2",
+      "name": "圣路易",
+      "country": "SN",
+      "nx": 0.1625,
+      "ny": 0.420988,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "bko",
+      "name": "巴马科",
+      "country": "ML",
+      "nx": 0.186111,
+      "ny": 0.437778,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "oua",
+      "name": "瓦加杜古",
+      "country": "BF",
+      "nx": 0.204167,
+      "ny": 0.438765,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "nim",
+      "name": "尼亚美",
+      "country": "NE",
+      "nx": 0.214167,
+      "ny": 0.433333,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ndj",
+      "name": "恩贾梅纳",
+      "country": "TD",
+      "nx": 0.25,
+      "ny": 0.440247,
+      "tier": 3,
+      "continent": "非洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "tas",
+      "name": "塔什干",
+      "country": "UZ",
+      "nx": 0.400556,
+      "ny": 0.296049,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "cmb",
+      "name": "科伦坡",
+      "country": "LK",
+      "nx": 0.430278,
+      "ny": 0.465926,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ktm",
+      "name": "加德满都",
+      "country": "NP",
+      "nx": 0.445278,
+      "ny": 0.36321,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "rgn",
+      "name": "仰光",
+      "country": "MM",
+      "nx": 0.475556,
+      "ny": 0.416543,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "pnh",
+      "name": "金边",
+      "country": "KH",
+      "nx": 0.499722,
+      "ny": 0.442716,
+      "tier": 3,
+      "continent": "亚洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sof",
+      "name": "索非亚",
+      "country": "BG",
+      "nx": 0.273056,
+      "ny": 0.289136,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "beg",
+      "name": "贝尔格莱德",
+      "country": "RS",
+      "nx": 0.265278,
+      "ny": 0.278765,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "msq",
+      "name": "明斯克",
+      "country": "BY",
+      "nx": 0.285,
+      "ny": 0.233827,
+      "tier": 3,
+      "continent": "欧洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "ccs",
+      "name": "加拉加斯",
+      "country": "VE",
+      "nx": 0.0225,
+      "ny": 0.448148,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "uio",
+      "name": "基多",
+      "country": "EC",
+      "nx": 0.990278,
+      "ny": 0.500988,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "mvd",
+      "name": "蒙得维的亚",
+      "country": "UY",
+      "nx": 0.052222,
+      "ny": 0.672346,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "lpb",
+      "name": "拉巴斯",
+      "country": "BO",
+      "nx": 0.019167,
+      "ny": 0.581481,
+      "tier": 3,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "asu",
+      "name": "亚松森",
+      "country": "PY",
+      "nx": 0.048333,
+      "ny": 0.624938,
+      "tier": 2,
+      "continent": "南美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "sjo",
+      "name": "圣何塞",
+      "country": "CR",
+      "nx": 0.974722,
+      "ny": 0.451111,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "pty2",
+      "name": "巴拿马城",
+      "country": "PA",
+      "nx": 0.9875,
+      "ny": 0.455556,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    },
+    {
+      "id": "hav",
+      "name": "哈瓦那",
+      "country": "CU",
+      "nx": 0.979444,
+      "ny": 0.385926,
+      "tier": 3,
+      "continent": "北美洲",
+      "orgs": [],
+      "tags": []
+    }
+  ],
+  "totalCities": 352
+}

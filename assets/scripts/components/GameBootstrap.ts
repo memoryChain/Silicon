@@ -2,6 +2,7 @@ import { _decorator, Component, Node, Label, UITransform, Color, Sprite, SpriteF
 import { gameManager } from '../core/GameManager';
 import { GamePhase, OutcomeType } from '../data/GameConstants';
 import { EventBus, GameEvents } from '../utils/EventBus';
+import { WorldMapOverlay } from './WorldMapOverlay';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameBootstrap')
@@ -19,6 +20,7 @@ export class GameBootstrap extends Component {
   private _marqueeNode: Node | null = null;
   private _marqueeQueue: string[] = [];
   private _marqueeLineIdx = 0;
+  private _mapOverlay: WorldMapOverlay | null = null;
 
   async start(): Promise<void> {
     await gameManager.init();
@@ -34,6 +36,7 @@ export class GameBootstrap extends Component {
   update(dt: number): void {
     if (!this._ready) return;
     gameManager.update(dt);
+    this._mapOverlay?.update(dt, gameManager.state);
   }
 
   // ── AI 类型选择 ──
@@ -167,6 +170,45 @@ export class GameBootstrap extends Component {
       this._worldLabels.push(lbl);
     });
 
+    // ── 调试按钮（底部） ──
+    const dbgRoot = new Node('DebugBtns');
+    dbgRoot.parent = root;
+    dbgRoot.setPosition(0, -H / 2 + 58);
+    const dbgLabel = mkLabelCenter('调试: 混合', 12, new Color(150, 150, 150), dbgRoot, 0, 14);
+
+    const dbgBtns = [
+      { t: '状态+', cb: () => { const m = this._mapOverlay?.cycleDebugMode(); if (dbgLabel && m) dbgLabel.string = '调试: ' + m; } },
+      { t: '开/关', cb: () => { const on = this._mapOverlay?.toggleDebug(); if (dbgLabel) dbgLabel.string = on ? '调试: 混合' : '调试: 关'; } },
+    ];
+    dbgBtns.forEach(({ t, cb }, i) => {
+      const b = this.makeBtn(t, cb);
+      b.parent = dbgRoot;
+      b.setPosition((i - 0.5) * 80, -4);
+    });
+
+    // 大洲筛选按钮
+    const contRoot = new Node('ContinentBtns');
+    contRoot.parent = root;
+    contRoot.setPosition(0, -H / 2 + 14);
+    const continents = this._mapOverlay?.getContinents() || [];
+    continents.forEach((cont, i) => {
+      const visible = this._mapOverlay?.isContinentVisible(cont) ?? true;
+      const label = (visible ? '● ' : '○ ') + cont;
+      const btn = this.makeBtn(label, () => {
+        const v = this._mapOverlay?.toggleContinent(cont);
+        // 刷新按钮文字
+        contRoot.children.forEach((child, j) => {
+          const l = child.getComponent(Label);
+          if (l && j < continents.length) {
+            const cv = this._mapOverlay?.isContinentVisible(continents[j]) ?? true;
+            l.string = (cv ? '● ' : '○ ') + continents[j];
+          }
+        });
+      });
+      btn.parent = contRoot;
+      btn.setPosition((i - (continents.length - 1) / 2) * 72, 0);
+    });
+
     // 定时刷新
     this.schedule(this.refreshHUD, 0.3);
   }
@@ -296,6 +338,7 @@ export class GameBootstrap extends Component {
     mapNode.parent = parent;
     const sprite = mapNode.addComponent(Sprite);
     sprite.spriteFrame = this.worldMapSpriteFrame;
+    // 正常颜色，不加暗
 
     const imgW = this.worldMapSpriteFrame.width;
     const imgH = this.worldMapSpriteFrame.height;
@@ -310,6 +353,9 @@ export class GameBootstrap extends Component {
     const scale = Math.min(availW / imgW, availH / imgH);
     mapNode.setScale(scale, scale);
     mapNode.setPosition(0, (mapTop + mapBottom) / 2);
+
+    // 网络节点覆盖层（跟地图同缩放）
+    this._mapOverlay = new WorldMapOverlay(mapNode, imgW, imgH, gameManager.config.citiesConfig);
   }
 
   // ── 结局 ──

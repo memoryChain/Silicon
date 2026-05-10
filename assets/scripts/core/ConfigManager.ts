@@ -5,10 +5,8 @@ import { FormulaConfig } from '../data/FormulaTypes';
 import { WorldAttributes } from '../data/AttributeData';
 import { EraConfig } from '../configs/Eras';
 import { EventConfig } from './EventSystem';
+import { CitiesConfig } from '../components/WorldMapOverlay';
 
-/**
- * 配置管理器 —— 运行时从 resources/configs/ 加载 JSON 文件。
- */
 export class ConfigManager {
   private _aiTypes: Map<string, AITypeConfig> = new Map();
   private _skillTree: SkillTreeConfig = null!;
@@ -16,6 +14,7 @@ export class ConfigManager {
   private _formulaConfig: FormulaConfig = null!;
   private _eraConfig: EraConfig = null!;
   private _eventConfigs: EventConfig[] = [];
+  private _citiesConfig: CitiesConfig = null!;
   private _loaded = false;
 
   get aiTypes(): ReadonlyMap<string, AITypeConfig> { return this._aiTypes; }
@@ -24,6 +23,7 @@ export class ConfigManager {
   get formulaConfig(): FormulaConfig { return this._formulaConfig; }
   get eraConfig(): EraConfig { return this._eraConfig; }
   get eventConfigs(): EventConfig[] { return this._eventConfigs; }
+  get citiesConfig(): CitiesConfig { return this._citiesConfig; }
 
   async loadAll(): Promise<void> {
     if (this._loaded) return;
@@ -37,7 +37,7 @@ export class ConfigManager {
       });
 
     try {
-      const [aiTypes, skillTree, worldInit, formula, events, eras, eventCfg] = await Promise.all([
+      const [aiTypes, skillTree, worldInit, formula, events, eras, eventCfg, cities] = await Promise.all([
         load('configs/ai_types'),
         load('configs/skill_tree'),
         load('configs/world_init'),
@@ -45,6 +45,7 @@ export class ConfigManager {
         load('configs/events'),
         load('configs/eras'),
         load('configs/event_config'),
+        load('configs/cities'),
       ]);
 
       this._loadAITypes(aiTypes);
@@ -53,6 +54,7 @@ export class ConfigManager {
       this._formulaConfig = formula;
       this._eraConfig = eras;
       this._eventConfigs = Array.isArray(eventCfg) ? eventCfg : (eventCfg.events ?? []);
+      this._citiesConfig = cities;
       this._loaded = true;
     } catch (e) {
       console.error('[ConfigManager] JSON 配置加载失败:', e);
